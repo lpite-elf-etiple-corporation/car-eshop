@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "type": "module",
+  "scripts": {
+    "start":"nodemon index.js"
+  },
+  "nodemonConfig": {
+    "ignore": ["static/*", "node_modules/*"]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
