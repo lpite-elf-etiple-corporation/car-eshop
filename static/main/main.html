@@ -1,11 +1,15 @@
 <main class="main_page">
-  <h2 class="main_page__title">Poznaj nasze pojazdy</h2>
-  <h3 class="main_page__subtitle">Najlepszy stosunek ceny do jakości!</h3>
-  <div class="main_page__cars">
+  <h2 class="page_title">Wypożyczalnia samochodów sportowych</h2>
+  <h3 class="page_subtitle">Poznaj naszą flotę!</h3>
+  <div class="cars_container">
     <article class="car_card" v-for="car in cars">
       <span class="car_card__name">{{car.name}}</span>
       <div class="car_card__center">
-        <img class="car_card__image" :src="car.image" alt="" />
+        <img
+          class="car_card__image"
+          src="../images/Porsche 911 Carrera 4s.png"
+          alt=""
+        />
         <div class="car_card__specifications">
           <div class="car_card__specification">
             <img
