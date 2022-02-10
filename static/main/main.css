@@ -22,6 +22,7 @@
   flex-direction: column;
   background-color: #f7f7f7;
   position: relative;
+  box-shadow: 4px 4px 4px #FF4D00;
 }
 .car_card__name {
   margin: 33px 0 0 0;
@@ -35,7 +36,7 @@
   justify-content: space-around;
 }
 .car_card__image {
-  object-fit: cover;
+  object-fit: fill;
 }
 .car_card__specifications {
   width: 135px;
@@ -65,6 +66,20 @@
   bottom: 27px;
   left: 42px;
 }
+.car-link{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  padding: 15px 0 0;
+  color: #000000;
+  border: 3px solid #FF4D00;
+  box-sizing: border-box;
+  width: 276px;
+  height: 56px;
+}
 @media screen and (max-width: 1100px) {
   .main_page {
     width: 100%;
@@ -78,4 +93,26 @@
   .car_card__image {
     height: 110px;
   }
+}
+.about-us .tile{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center; 
+
+}
+.about-us .subtitle{
+  margin-top: -10px;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  
+  color: #FF4D00;
+}
+.about-us .text{
+  font-size: 20px;
+  line-height: 28px;
+  text-align: justify;
 }
