@@ -24,6 +24,9 @@ app.get("/", (req, res) => {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" href="style.css">
 
     </head>
@@ -32,6 +35,8 @@ app.get("/", (req, res) => {
       ${main}
       ${footer}
     </body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./renderCars.js"></script>
   </html>
   `);
 });

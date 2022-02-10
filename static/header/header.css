@@ -15,9 +15,10 @@
   background-color: #1c1c1c;
   font-family: "Raleway", sans-serif;
 }
-.top_line__logo {
+.top_line__phone {
   transform: rotate(90deg);
 }
+
 .text__top_line {
   list-style: none;
   padding: 0px;
@@ -27,6 +28,7 @@
 .text__top_line--red {
   color: #ff4d00;
 }
+
 .nav {
   width: 466px;
   height: 56px;
@@ -41,9 +43,9 @@
   padding: 0px;
   margin: 0px;
   list-style: none;
+  width: 100%;
 }
 .menu__item {
-  margin: 0 60px;
 }
 .menu__link {
   text-decoration: none;
@@ -60,10 +62,11 @@
 
 .logo__title {
   font-size: 18px;
+  font-family: "Racing Sans One", cursive;
 }
 
 .logo__image {
-  width: 22.43px;
+  width: 23px;
   height: 30px;
   margin: 0 10px;
 }
@@ -75,4 +78,30 @@
 }
 .social_icon {
   height: 20px;
+}
+@media screen and (max-width: 972px) {
+  .header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo__title {
+    display: none;
+  }
+  .logo__image {
+    width: 28px;
+    height: 35px;
+  }
+  .text__top_line {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+  .top_line__logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .social_links {
+    display: none;
+  }
 }

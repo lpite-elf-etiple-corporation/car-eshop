@@ -1,9 +1,47 @@
-<main class="main-page">
-  <article class="car_card">
-    <span class="card_card__name">Jopa</span>
-    <div class="car_card__center">
-      <img class="car_card__image" src="" alt="" />
-    </div>
-    <span class="car_card__price">234234</span>
-  </article>
+<main class="main_page">
+  <h2 class="main_page__title">Poznaj nasze pojazdy</h2>
+  <h3 class="main_page__subtitle">Najlepszy stosunek ceny do jakości!</h3>
+  <div class="main_page__cars">
+    <article class="car_card" v-for="car in cars">
+      <span class="car_card__name">{{car.name}}</span>
+      <div class="car_card__center">
+        <img class="car_card__image" :src="car.image" alt="" />
+        <div class="car_card__specifications">
+          <div class="car_card__specification">
+            <img
+              class="car_card__specification_icon"
+              src="../images/car.svg"
+              alt=""
+            />
+            <span>{{car.type}}</span>
+          </div>
+          <div class="car_card__specification">
+            <img
+              class="car_card__specification_icon"
+              src="../images/engine.svg"
+              alt=""
+            />
+            <span> {{car.engine}}</span>
+          </div>
+          <div class="car_card__specification">
+            <img
+              class="car_card__specification_icon"
+              src="../images/color.svg"
+              alt=""
+            />
+            <span>{{car.color}}</span>
+          </div>
+          <div class="car_card__specification">
+            <img
+              class="car_card__specification_icon"
+              src="../images/power.svg"
+              alt=""
+            />
+            <span>{{car.power}}</span>
+          </div>
+        </div>
+      </div>
+      <span class="car_card__price">Wynajem Cena Brutto: {{car.price}}zł</span>
+    </article>
+  </div>
 </main>
