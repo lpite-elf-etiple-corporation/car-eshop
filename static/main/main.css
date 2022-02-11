@@ -67,9 +67,7 @@
   left: 42px;
 }
 .car-link{
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  margin: 30px auto;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
@@ -94,25 +92,60 @@
     height: 110px;
   }
 }
-.about-us .tile{
+.about-us .content{
+  margin: 20px;
+}
+.about-us .big-img{
+  width: 100%;
+  object-fit: fill;
+}
+.about-us .title{
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
-  display: flex;
-  align-items: center; 
 
 }
 .about-us .subtitle{
   margin-top: -10px;
   font-size: 20px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   
   color: #FF4D00;
 }
-.about-us .text{
+.rental{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.car-title{
+  font-weight: bold;  
   font-size: 20px;
   line-height: 28px;
-  text-align: justify;
+}
+.car-model{
+  font-weight: 500;
+  font-size: 15px;
+  text-align: right;
+  
+  color: #818181;
+}
+.adventages{
+  margin: 0 auto;
+  width: 900px;
+  height: 300px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.adventage{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  width: 450px;
+}
+.adventage .text{
+  margin: 0 0 0 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
 }

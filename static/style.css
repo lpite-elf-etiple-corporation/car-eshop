@@ -4,6 +4,13 @@
 
 @import url("./footer/footer.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+}
 html,
 body {
   margin: 0;
@@ -24,4 +31,7 @@ body {
 }
 a{
   text-decoration: none;
+}
+b{
+  font-weight: bold;
 }
